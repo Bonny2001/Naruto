@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:wght@300&family=Mukta:wght@500&family=Noto+Sans:wght@300&family=Poppins:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+.pic {
+    width: auto;
+    height: 80px;
+    border-radius: 12px;
+}
+
+
+
+#navber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navber li {
+    list-style: none;
+    padding: 0 22px;
+    position: relative;
+}
+
+#navber li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #d4caca;
+    transition: 0.3s ease;
+}
+
+#navber li a:hover,
+#navber li a.active {
+    color: #088178;
+}
+
+#navber li a.active::after,
+#navber li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    background-color: #088178;
+    transition: 0.3s ease;
+
+}
+
+#hero {
+
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    background-color: #d1bebe7a;
+    width: auto;
+    align-items: center;
+
+
+    padding: 0px 80px;
+
+}
+
+.topic {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    padding: 0px 80px;
+
+}
+
+
+
+.naruto {
+    height: 40rem;
+    width: auto;
+}
+
+.topic h1 {
+    font-size: 139px;
+    line-height: 122px;
+
+}
+
+.topic h3 {
+    font-size: 39px;
+    line-height: 70px;
+    font-weight: bold;
+    color: chocolate;
+
+
+}
+
+.topic h4 {
+    font-size: 22px;
+    line-height: 30px;
+
+}
+
+.btn{
+    padding: 12px;
+  border: 2px royalblue;
+  border: none;
+  box-shadow: 2px black;
+  box-shadow: 2px 6px 10px -2px black;
+  border-radius: 6px;
+  margin: 10px;
+  width: 10vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+    #hero {
+        display: flex;
+        height: 90vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        background-position: top 0 right 0;
+        padding: 0px 0px;
+    }
+
+    .naruto {
+        height: 35rem;
+        padding-left: 20px;
+    }
+
+    .topic h1 {
+        font-size: 126px;
+        line-height: 100px;
+    }
+
+
+    .topic h3 {
+        font-size: 26px;
+        line-height: 39px;
+    }
+
+    .topic h4 {
+        font-size: 16px;
+        line-height: 17px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #hero {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 90vh;
+        justify-content: center;
+        align-items: center;
+        background-position: top 0 right 0;
+       
+    }
+ .topic{
+    padding-left: 20vw;
+    width: fit-content;
+ }
+    .naruto {
+        height: 38rem;
+        
+    }
+
+    .topic h1 {
+        font-size: 114px;
+        line-height: 95px;
+    }
+
+    .topic h3 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .topic h4 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pic {
+        padding: 18px 0px;
+    }
+
+    #navber li a {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        color: #d4caca;
+        transition: 0.3s ease;
+    }
+    .btn{
+        width: 18vw;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .naruto {
+        height: 25rem;
+    }
+ .topic{
+    height: 26vh;
+    width: 93vw;
+    margin-top: 5vh;
+ }
+    #navber li a {
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 300;
+        color: #d4caca;
+        transition: 0.3s ease;
+    }
+
+    #navber li {
+        list-style: none;
+        padding: 0 10px;
+        position: relative;
+    }
+
+    .topic h1 {
+        font-size: 76px;
+        line-height: 66px;
+    }
+
+    .topic h3 {
+        font-size: 25px;
+        line-height: 42px;
+    }
+    #hero{
+        padding: 0 10px;
+    }
+    .btn{
+        
+    
+        width: 20vw;
+    }
+}
